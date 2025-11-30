@@ -2,70 +2,70 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const skillCategories = [
-    {
-        title: "Programming Languages",
-        skills: ["Python", "C", "C++", "Java", "JavaScript", "TypeScript"]
-    },
-    {
-        title: "Web Technologies",
-        skills: ["FastAPI", "Flask", "React", "NextJS", "SpringBoot"]
-    },
-    {
-        title: "AI & ML",
-        skills: ["PyTorch", "LangChain", "LangGraph", "TensorFlow", "Scikit-learn"]
-    },
-    {
-        title: "Database Systems",
-        skills: ["Firebase", "MySQL", "PostgreSQL", "MongoDB"]
-    },
-    {
-        title: "DevOps & Tools",
-        skills: ["Docker", "Git", "Kubernetes", "Linux", "ROS2", "Raspberry Pi", "Arduino"]
-    }
+  {
+    title: "Programming Languages",
+    skills: ["Python", "C", "C++", "Java", "JavaScript", "TypeScript"]
+  },
+  {
+    title: "Web Technologies",
+    skills: ["FastAPI", "Flask", "React", "NextJS", "SpringBoot"]
+  },
+  {
+    title: "AI & ML",
+    skills: ["PyTorch", "LangChain", "LangGraph", "TensorFlow", "Scikit-learn"]
+  },
+  {
+    title: "Database Systems",
+    skills: ["Firebase", "MySQL", "PostgreSQL", "MongoDB"]
+  },
+  {
+    title: "DevOps & Tools",
+    skills: ["Docker", "Git", "Kubernetes", "Linux", "ROS2", "Raspberry Pi", "Arduino"]
+  }
 ];
 
 const Skills = () => {
-    return (
-        <section id="skills" className="skills-section">
-            <div className="container">
-                <motion.h2
-                    className="section-title"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                >
-                    Technical Skills
-                </motion.h2>
+  return (
+    <section id="skills" className="skills-section">
+      <div className="container">
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Technical Skills
+        </motion.h2>
 
-                <div className="skills-grid">
-                    {skillCategories.map((category, index) => (
-                        <motion.div
-                            key={index}
-                            className="skill-category"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                        >
-                            <h3>{category.title}</h3>
-                            <div className="skill-tags">
-                                {category.skills.map((skill, i) => (
-                                    <motion.span
-                                        key={i}
-                                        className="skill-tag"
-                                        whileHover={{ scale: 1.1, backgroundColor: "var(--primary-color)", color: "#000" }}
-                                    >
-                                        {skill}
-                                    </motion.span>
-                                ))}
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
+        <div className="skills-grid">
+          {skillCategories.map((category, index) => (
+            <motion.div
+              key={index}
+              className="skill-category"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <h3>{category.title}</h3>
+              <div className="skill-tags">
+                {category.skills.map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    className="skill-tag"
+                    whileHover={{ scale: 1.1, backgroundColor: "var(--primary-color)", color: "#000" }}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
 
-            <style jsx>{`
+      <style jsx>{`
         .skills-section {
           padding: 8rem 2rem;
           background: var(--bg-color);
@@ -129,8 +129,8 @@ const Skills = () => {
           transition: all 0.3s ease;
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Skills;
