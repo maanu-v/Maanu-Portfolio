@@ -38,8 +38,8 @@ const About = () => {
                 <span>CGPA (B.Tech)</span>
               </div>
               <div className="stat-item">
-                <h3>2+</h3>
-                <span>Years Exp</span>
+                <h3></h3>
+                <span></span>
               </div>
               <div className="stat-item">
                 <h3>10+</h3>

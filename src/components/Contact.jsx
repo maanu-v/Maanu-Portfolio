@@ -25,22 +25,22 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-              I'll try my best to get back to you!
+              I'm currently looking for new opportunities. Whether you have a question or want to collaborate,
+              contact me and I'll try my best to get back to you!
             </p>
 
             <div className="contact-details">
               <div className="detail-item">
                 <FaEnvelope style={{ color: '#64ffda', fontSize: '1.5rem', minWidth: '1.5rem' }} />
-                <a href="mailto:manuvenke06@gmail.com">manuvenke06@gmail.com</a>
+                <a href="mailto:manuvenke06@gmail.com" target='_blank' rel='noopener noreferrer'>manuvenke06@gmail.com</a>
               </div>
               <div className="detail-item">
                 <FaPhone style={{ color: '#64ffda', fontSize: '1.5rem', minWidth: '1.5rem' }} />
-                <span>+91 7358776136</span>
+                <a href="tel:+917358776136" target='_blank' rel='noopener noreferrer'>+91 7358776136</a>
               </div>
               <div className="detail-item">
                 <FaMapMarkerAlt style={{ color: '#64ffda', fontSize: '1.5rem', minWidth: '1.5rem' }} />
-                <span>Coimbatore, Tamil Nadu, India</span>
+                <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu,+India" target='_blank' rel='noopener noreferrer'>Coimbatore, Tamil Nadu, India</a>
               </div>
             </div>
 
