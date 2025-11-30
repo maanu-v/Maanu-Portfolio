@@ -11,7 +11,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    MANASA <span className="highlight">V</span>
+                    MANASA V
                 </motion.h1>
 
                 <motion.h2
