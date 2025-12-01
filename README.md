@@ -2,6 +2,12 @@
 
 A modern, responsive personal portfolio website built with React and Vite, featuring smooth animations and an eye-catching design.
 
+## 🔗 Live Demo
+
+**[View Live Portfolio](https://maanu-v.github.io/Maanu-Portfolio/)**
+
+The portfolio is deployed and accessible at: https://maanu-v.github.io/Maanu-Portfolio/
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across all devices
@@ -117,11 +123,18 @@ To customize the portfolio for your own use:
 
 ## 🌐 Deployment
 
-This project can be deployed to various platforms:
+This portfolio is currently deployed on **GitHub Pages** and is live at:
+**https://maanu-v.github.io/Maanu-Portfolio/**
 
+### Deploying Your Own Version
+
+If you want to deploy your own version, this project can be deployed to various platforms:
+
+- **GitHub Pages**: Use GitHub Actions for automated deployment
+  - Build the project: `npm run build`
+  - Deploy the `dist` folder to the `gh-pages` branch
 - **Vercel**: Connect your GitHub repository for automatic deployments
 - **Netlify**: Drag and drop the `dist` folder or connect via Git
-- **GitHub Pages**: Use GitHub Actions for automated deployment
 - **Other platforms**: Any static hosting service that supports React applications
 
 ## 📝 License
