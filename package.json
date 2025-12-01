@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://maanu-v.github.io/Maanu-Portfolio/",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
